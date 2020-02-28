@@ -1,7 +1,6 @@
 {
     "type": "project",
     "license": "proprietary",
-    "minimum-stability": "dev",
     "require": {
         "php": "^7.1.3",
         "ext-ctype": "*",
@@ -14,7 +13,7 @@
         "symfony/flex": "^1.1",
         "symfony/form": "*",
         "symfony/framework-bundle": "*",
-        "symfony/mercure-bundle": "^1.0@dev",
+        "symfony/mercure-bundle": "*",
         "symfony/messenger": "*",
         "symfony/monolog-bundle": "^3.1",
         "symfony/orm-pack": "*",
@@ -25,8 +24,15 @@
         "symfony/twig-bundle": "*",
         "symfony/validator": "*",
         "symfony/web-link": "*",
-        "symfony/yaml": "*"
+        "symfony/yaml": "*",
+        "sroze/live-twig": "*"
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../live-twig"
+        }
+    ],
     "require-dev": {
         "symfony/debug-pack": "*",
         "symfony/dotenv": "*",
@@ -78,7 +84,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "4.2.*"
+            "require": "4.4.*"
         }
     }
 }

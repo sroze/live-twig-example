@@ -1,3 +1,4 @@
+# config/packages/live_twig.yaml
 live_twig:
-    hub_url: "%env(MERCURE_PUBLISH_URL)%"
-    hub_token: "%env(MERCURE_TOKEN)%"
+    mercure_publisher: "Symfony\\Component\\Mercure\\PublisherInterface"
+    mercure_public_url: "%env(MERCURE_PUBLISH_URL)%"
